@@ -66,9 +66,9 @@ public class Main2Activity extends AppCompatActivity {
                 Log.d("error", "empty strings");
             }
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            Log.d("error", "File Not Found");
         } catch (IOException e) {
-            e.printStackTrace();
+            Log.d("error", "IO ERROR");
         }
 
 
