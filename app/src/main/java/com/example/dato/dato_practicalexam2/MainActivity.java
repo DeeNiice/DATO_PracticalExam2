@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         editor.putString("course2",c2);
         editor.putString("course3",c3);
         editor.putString("course4",c4);
-        editor.putString("course5",c5);
+        editor.putString("course5",c5);ssdsds
         editor.putString("course6",c6);
         editor.putString("course7",c7);
         editor.putString("course8",c8);
