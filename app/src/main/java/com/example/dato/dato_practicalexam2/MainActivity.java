@@ -76,6 +76,24 @@ public class MainActivity extends AppCompatActivity {
             fos.write(c6.getBytes());
             fos.write(c7.getBytes());
             fos.write(c8.getBytes());
+            //fos.write(comm.getBytes());
+
+
+        } catch (FileNotFoundException e) {
+            Log.d("error", "File Not Found");
+        } catch (IOException e) {
+            Log.d("error", "IO ERROR");
+
+        }finally{
+            try{
+                fos.close();
+            }catch(IOException e){
+                Log.d("error", "IO ERROR");
+            }
+        }
+
+        try {
+            fos=openFileOutput("data2.txt",MODE_PRIVATE);
             fos.write(comm.getBytes());
 
 
